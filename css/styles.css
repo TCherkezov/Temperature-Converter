@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+}
+
+/* Containers */
+.container {
+    display: flex;
+}
+
+.left-container {
+    width: 50%;
+    flex-basis:100%;
+}
+
+.right-container {
+    width: 50%;
+    min-height: 100vh;
+    background-color: #2C74B3;
+    flex-basis:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-wrap:wrap;
+    }
+    .left-container, .right-container {
+        width: 100%;
+    }
+    .right-container {
+        min-height: 30vh;
+    }
+}
+
+/* Degrees */
+.degree-result {
+    display: block;
+    margin: 0 auto;
+    color: white;
+    font-size: 50px;
+}
+
+@media (max-width: 800px) {
+    .degrees, .degree-result {
+        font-size: 25px;
+    }
+}
+
+/* Headings */
+h3 {
+    padding-left: 25%;
+    color: white;
+}
+
+h1 {
+    color: #2C74B3;
+    padding: 10%;
+    font-family: 'Rowdies', cursive;
+}
+
+/* Labels */
+.degree-label, .convert-label {
+    color: #2C74B3;
+    padding: 10%;
+    font-size: 25px;
+    font-family: 'Rowdies', cursive;
+}
+
+/* Input and Conversion Type Divs */
+.degree-input, .convert-type {
+    padding: 10%;
+}
+
+@media (max-width: 800px) {
+    .degree-input, .convert-type {
+        padding: 5%;
+    }
+}
+
+input, select {
+    padding: 15px 12px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #24292e;
+    background-color: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    outline: none;
+    box-shadow: rgba(225, 228, 232, 0.2) 0px 1px 0px 0px inset;
+}
+
+/* Specific Inputs */
+.degree-amount {
+    width: 85%;
+}
+
+.select-type {
+    width: 100%;
+}
+
+/* Button For Conversion */
+button {
+    margin-top: 50px;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: #fff;
+    background-color: #2C74B3;
+    height: 48px;
+}
+
+button:hover{
+    color: grey;
+}
+
+
+
+

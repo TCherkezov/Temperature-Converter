@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rowdies&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <div class="container">
+    <div class="left-container">
+        <h1>Enter Temperature</h1>
+
+        <label class="degree-label" for="type">Degree</label>
+
+        <div class="degree-input">
+        <input class="degree-amount" type="number" name="degree" id="degAmount">
+        <select name="type" id="degType">
+            <option value="F">&deg;F</option>
+            <option value="C">&deg;C</option>
+            <option value="K">K</option>
+        </select>
+        </div>
+
+        <label class="convert-label" for="convert">Convert In</label>
+
+        <div class="convert-type">
+        <select class="select-type" name="type" id="convType">
+            <option value="F">Fahrenheit (&deg;F)</option>
+            <option value="C">Celcius (&deg;C)</option>
+            <option value="K">Kelvin (K)</option>
+        </select>
+
+        <button>Convert</button>
+        </div>
+
+    </div>
+
+        <div class="right-container">
+            <div class="degrees">
+            <h3>F</h3>
+            <h1 class="degree-result">0</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
